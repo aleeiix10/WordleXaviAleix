@@ -18,5 +18,9 @@ Per escollir la paleta que anem a utilizar hem anat a la pàgina del wordle y he
 
 <h2>Wireframes / Diagrames de flux</h2>
 
-![Wireframe](https://user-images.githubusercontent.com/77339181/195894795-c6f46a08-be7e-4490-aa43-c348c1a390f4.png)
+![Detailed website wireframe2](https://user-images.githubusercontent.com/77339181/195896154-e48d33ee-ace9-490e-8547-17c76130cc91.png)
 
+- Pantalla d'inici: A la pantalla d'inici hem ficat un titol amb un logo al costat, un quadre de text per les instruccions i un botó per iniciar el joc
+- Pantalla del joc: Hem ficat un títol, dues llistes per poder fer els quadrats per les paraules y per les lletres del teclat
+- Pantalla victoria: El títol y un text per informarte que has guanyat i quina era la paraula
+- Pantalla derrota: El títol y un text per informarte que has perdut i quina era la paraula
