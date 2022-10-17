@@ -1,3 +1,4 @@
+<?php  session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,5 +95,11 @@
             <button class="keyboard-button">BORRAR</button>
         </div>
     </div>
+    <?php
+        $array = file("catala5.txt");
+        $rand = rand(0,count($array)-1);
+        $palabra = $array[$rand];
+        echo $palabra;
+?>
 </body>
 </html>

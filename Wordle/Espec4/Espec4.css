@@ -28,7 +28,7 @@ p {
     text-align: justify;
     border: 1px solid #000;
 }
-button {
+input {
     background-color: #43a147;
     width: 100px;
     height: 100px;
