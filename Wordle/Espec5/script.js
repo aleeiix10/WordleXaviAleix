@@ -1,33 +1,30 @@
-let cont = 1;
-let paraulaProbada = [];
+let intents = 0;
+let paraulaProbada = [[],[],[],[],[],[]];
+
+
 function escriureLletra(lletra){
-    if (paraulaProbada.length <5){
-    document.getElementById(cont).innerHTML=lletra;
-    paraulaProbada.push(lletra);
-    console.log(paraulaProbada);
-    cont +=1;
+    if (paraulaProbada[intents].length<5){
+        document.getElementById((intents*5)+(paraulaProbada[intents].length)+1).innerHTML=lletra;
+        paraulaProbada[intents].push(lletra);
+        console.log(paraulaProbada[intents]);
     }
 
 }
 function esborrarLletra(){
-    if (cont != 1){
-        if (paraulaProbada.length>=0){
-            document.getElementById(cont-1).innerHTML= "";
-            paraulaProbada.pop();
-            console.log(paraulaProbada);
-            cont -=1;
-        }
-        
+    if (paraulaProbada[intents]!=0){
+    document.getElementById(((intents*5)+paraulaProbada[intents].length)).innerHTML= "";
+    paraulaProbada[intents].pop();
+    console.log(paraulaProbada);
     }
+     
 }
 function enviar(){
-    if (paraulaProbada.length<5){
+    if (paraulaProbada[intents].length<5){
         alert("La paraula ha de contenir 5 lletres");
     }
     else{
-        paraulaProbada= [];
-        console.log(cont);
-        console.log(paraulaProbada); 
+        alert("Has enviat la paraula");
+        intents +=1;
     }
     
 }

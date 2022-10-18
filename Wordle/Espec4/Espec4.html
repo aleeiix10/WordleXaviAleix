@@ -4,34 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Espec4.css">
+    <link rel="stylesheet" href="style.css">
     <title>Pàgina Principal</title>
 </head>
 <body>
+    <div id="left">
+    <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
+    </div>
     <div>
         <div id="h1">
         <h1>WORDLE</h1>
-        <img src="data:image/png;base64,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">
+        <img src="">
         </div>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tortor eu interdum lacinia. Nullam aliquet eu mauris quis porta. Phasellus sollicitudin mi vitae ultrices ullamcorper. Donec suscipit dui leo, nec placerat diam facilisis ut. Phasellus vel suscipit nisl. Nulla est velit, venenatis quis elit ac, imperdiet efficitur felis. Nam a ultrices diam. Donec ut tortor sit amet tortor consequat congue. Fusce sodales nulla in velit ullamcorper, a vulputate odio ultricies.
-
-            Suspendisse potenti. Vivamus vel lectus vulputate, viverra massa vehicula, interdum nisl. Pellentesque imperdiet auctor eros, ut gravida est tristique et. Aliquam aliquet, felis a feugiat sagittis, libero purus egestas leo, at luctus justo nibh ut erat. Nulla a quam sit amet massa faucibus vulputate ut a augue. Mauris sodales ultricies nunc. Vivamus mollis lectus et ligula tincidunt suscipit. In volutpat turpis vitae lectus rutrum tristique. Integer urna leo, vestibulum sed nisi fringilla, malesuada consectetur sem. Cras dictum velit in imperdiet suscipit.
+        <div id="instruccions">
+            <p>Qualsevol persona pot jugar a la paraula del dia.<br><br>
+                L'objectiu és simple, endevinar la paraula oculta. La paraula té 5 lletres i tens 6 intents per a endevinar-la. La paraula és la mateixa per a totes les persones en aquest dia.<br><br>
+                Cada intent ha de ser una paraula vàlida. En cada ronda el joc pinta cada lletra d'un color indicant si aquesta lletra es troba o no en la paraula i si es troba en la posició correcta.
+            </p>
+            <ul>
+                <li><span class="verd">VERD</span> significa que la lletra R està en la paraula i en la posició <span class="verd">CORRECTA</span>.</li>
+                <li><span class="groc">GROC</span> significa que la lletra és present en la paraula però en la posició <span class="groc">INCORRECTA</span>.</li>
+                <li><span class="gris">GRIS</span> significa que la lletra NO està en la paraula.</li>
+            </ul>
+            <h2 style="text-align: center;">Exemple</h2>
+            <hr>
+            <p>
+                Imagina que la paraula oculta sigui RUBIA.<br><br>
+                Començem amb una paraula vàlida com FAROL.<br><br>
+            </p>
             
-            Quisque molestie ante ac nulla suscipit luctus. Nullam eu purus quis sapien ullamcorper porttitor sed nec est. Duis convallis placerat sapien a ullamcorper. Praesent ac lorem rutrum est mollis viverra. Maecenas sollicitudin nec magna at accumsan. Praesent sit amet egestas magna, nec rhoncus risus. Curabitur luctus cursus varius.
+                <div class="paraula"><div class="dGris">F</div><div class="dGroc">A</div><div class="dGroc">R</div><div class="dGris">O</div><div class="dGris">L</div></div>
+            <p>    
+                <br><br>
+                El groc indica que tant la lletra R com la A hi estan a la paraula pero en la posició incorrecta.<br><br>
+                Puc ara intentar amb una paraula que tingui la R i l'A però en altres posicions com a ROSAS.<br><br>
+            </p>
             
-            Nulla malesuada pretium tortor, in sagittis quam tempor sed. Suspendisse sit amet risus eu velit ullamcorper dictum quis sit amet lacus. Praesent ut felis a eros interdum maximus. Nulla eget nisl semper, rutrum arcu in, euismod ipsum. Sed leo sem, dictum in imperdiet ac, facilisis eget nisi. Curabitur dictum, ex nec cursus feugiat, orci turpis accumsan ipsum, faucibus bibendum ex neque et felis. Aliquam dictum est sit amet suscipit porta. Ut sed massa nunc. Quisque posuere eu mauris ut scelerisque.
+            <div class="paraula"><div class="dVerd">R</div><div class="dGris">O</div><div class="dGris">S</div><div class="dGroc">A</div><div class="dGris">S</div></div>
+            <p>  
+            <br><br>
+                El color verd indica que la lletra R està en la posició correcta mentre que l'A continua estant en la incorrecta.<br><br>
+                Al final totes les lletres haurien de ser verdes.<br><br>
+            </p>
             
-            Vestibulum id luctus ante. Vivamus id ipsum nec neque dictum hendrerit ac vitae lectus. Nunc fringilla sit amet erat et mattis. Donec a quam aliquam, molestie nisi ac, volutpat ex. Donec sit amet ligula sit amet velit lacinia convallis. Vestibulum posuere sagittis tellus, id dignissim leo imperdiet at. Sed blandit, orci quis venenatis dapibus, tellus lorem pharetra mi, ut sagittis mauris sem eu elit. Sed efficitur euismod libero, non porttitor nulla fermentum eget. Sed non eros orci. Donec rutrum at leo in suscipit. Etiam justo nunc, lacinia a ullamcorper ut, consequat sit amet libero. Sed fringilla finibus rhoncus. Duis enim libero, suscipit vulputate rutrum sed, egestas sit amet enim. Duis congue nisi eu euismod semper.
+            <div class="paraula"><div class="dVerd">R</div><div class="dVerd">U</div><div class="dVerd">B</div><div class="dVerd">I</div><div class="dVerd">A</div></div>
+            <p>  
+            </p>
+            <h2 style="text-align: center;">Lletres Repetides</h2>
+            <hr>
+            <p>
+                La paraula oculta pot tenir lletres repetides. En aquest cas, les pistes són independents per a cada lletra i tenen prioritat (verda és major a groc).<br><br>
+                Per exemple si la paraula oculta és ROSAS. I utilitzo SACOS.<br><br>
+            </p>
             
-            Sed eget porttitor urna. Nulla vulputate, massa a porttitor consequat, leo turpis finibus turpis, nec ultricies sem nunc quis orci. Sed sit amet scelerisque metus. Quisque non neque quis mauris luctus egestas a quis turpis. Maecenas dignissim urna diam, a ullamcorper odio pulvinar ut. Nam eget purus quis quam pharetra porta sit amet vel magna. Curabitur eu aliquet lacus. Donec imperdiet ultricies ultrices. Nunc nec vehicula magna, et dictum neque. Vestibulum vel ligula accumsan, elementum elit in, volutpat lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi sodales sodales ex vel tincidunt. Mauris iaculis augue at lectus malesuada, commodo gravida eros euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam nulla nunc, efficitur et maximus ac, commodo id lacus.
+            <div class="paraula"><div class="dGroc">S</div><div class="dBlanc">A</div><div class="dBlanc">C</div><div class="dBlanc">O</div><div class="dVerd">S</div></div>
+            <p>  
+            <br><br>
+                En aquest cas la primera S aquesta en la posició incorrecta i la segona en la correcta.<br><br>
+                Si utilitzo RATOS.<br><br>
+            </p>
             
-            In sit amet neque ut magna vestibulum sagittis. Vestibulum tortor dolor, placerat ut laoreet in, venenatis quis mauris. Nulla viverra pellentesque lacus, sit amet egestas urna fermentum quis. Curabitur lacus urna, ullamcorper et metus non, vulputate rutrum nulla. In erat ex, scelerisque sed felis non, varius dapibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis aliquet diam. Suspendisse rutrum turpis ac ligula pellentesque, at sollicitudin lacus pellentesque. Ut vitae porttitor tellus. Fusce vel sagittis dui.
-            
-            dui. Aliquam convallis odio ut lobortis tincidunt. Donec blandit convallis lacus, et congue est sollicitudin sit amet. Nam posuere nec purus vitae ultrices. Sed porta lacus vel malesuada pulvinar. Ut eros lectus, facilisis quis lacinia iaculis, gravida non tellus. Curabitur sit amet elit non leo iaculis malesuada ac vel metus. Nam tincidunt sagittis lacinia. Nam ut mi dictum, porttitor urna eu, eleifend dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer neque libero, aliquet a tellus tempor, cursus tincidunt es</p>
+            <div class="paraula"><div class="dBlanc">R</div><div class="dBlanc">A</div><div class="dBlanc">T</div><div class="dBlanc">O</div><div class="dVerd">S</div></div>
+            <p>  
+            <br><br>
+                Només es marca l'última lletra com a correcta perquè té prioritat.
+            </p>
+            <h3 style="text-align: center;">Altres modes de joc</h3>
+            <hr>
+            <p>
+                Les mecaniques del joc són les mateixes per a totes les maneres de joc amb algunes petites diferències.
+            </p>
+            <h4 style="text-align: left;">Mode titlles</h4>
+            <ul>
+                <li>La paraula amagada té un accent</li>
+                <li>La paraula pot contenir de 5 a 7 lletres</li>
+                <li>Les vocals amb titlles son independents de les normals</li>
+            </ul>
+            <h4 style="text-align: left;">Mode científic</h4>
+            <ul>
+                <li>La paraula pot contenir de 5 a 7 lletres</li>
+                <li>La paraula amagada hi està relacionada amb la ciència.</li>
+            </ul>
+            <h4 style="text-align: left;">Contrarellotge</h4>
+            <ul>
+                <li>Endevina la major quantitat de paraules en 5 minuts</li>
+            </ul>
+            <h4 style="text-align: left;">Crear</h4>
+            <ul>
+                <li>Crea una paraula oculta i comparteix-la amb els teus amics</li>
+                <li>Pot ser en manera titlles o normal</li>
+                <li>La paraula pot tenir de 3 a 11 lletres</li>
+            </ul>
+            <h3 style="text-align: center;">Altres detalls</h3>
+            <hr>
+            <h5 style="text-align: left;">Titlles y Ñ al teclat</h5>
+            <p>  
+                Per a escriure les titlles i la ñ en el teclat de l'ordinador utilitza la tecla ALT/*OPTION.<br><br>
+                Exemple: ALT/OPTION + e = é<br><br>
+                Exemple: ALT/OPTION + n = ñ
+            </p>
+            <h5 style="text-align: left;">Diccionari de paraules</h5>
+            <p>  
+                La nostra llista de paraules no és perfecta encara que ajuntem diversos diccionaris. Si trobes un error pots enviar un correu a aleix-xavi@lapalabradeldia.com.
+            </p>
+            <h5 style="text-align: left;">Sobre el joc.</h5>
+            <p>
+                Pots una mica més <a href="https://lapalabradeldia.com/acerca/index.html">sobre el joc aquí</a>
+            </p>
+        </div>
         <hr>
-        <h3>¿Listo/a para jugar?</h3>
+        <h3>¿Llest/a per jugar?</h3>
         <input type="button" value="JUGAR" onclick="location.href='../Espec5/Espec5.php'">
     </div>
 </body>
-</html> 
+</html>
