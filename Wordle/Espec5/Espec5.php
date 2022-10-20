@@ -15,6 +15,7 @@
         $llista = file("catala5.txt");
         $aleatori = rand(0,count($llista)-1);
         $paraula= $llista[$aleatori];
+        echo "<script>$paraula</script>\n";
     ?>
     <div id="general">
         <div>
