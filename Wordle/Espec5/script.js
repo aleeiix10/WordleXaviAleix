@@ -19,10 +19,8 @@ function esborrarLletra(){
 
 function enviar(){
     if (paraulaProbada[intents].length<5){
-        alert("La paraula ha de contenir 5 lletres");
     }
     else{
-        alert("Has enviat la paraula");
         intents +=1;
     } 
 }
