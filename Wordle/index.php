@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Pàgina Principal</title>
 </head>
-<body>
+<body id="body1">
     <div id="left">
     <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
     </div>
@@ -109,12 +109,12 @@
             </p>
             <h5 style="text-align: left;">Sobre el joc.</h5>
             <p>
-                Pots una mica més <a href="https://lapalabradeldia.com/acerca/index.html">sobre el joc aquí</a>
+                Pots una mica més <a class="link" href="https://lapalabradeldia.com/acerca/index.html">sobre el joc aquí</a>
             </p>
         </div>
         <hr>
         <h3 style="text-align: center;">¿Llest/a per jugar?</h3>
-        <input style="text-align: center;" type="button" value="JUGAR" onclick="location.href='../Espec5/Espec5.php'">
+        <input style="text-align: center;" type="button" value="JUGAR" onclick="location.href='game.php'">
     </div>
     <div id="right">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">

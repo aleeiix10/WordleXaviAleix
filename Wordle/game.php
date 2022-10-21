@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="htmlGame" lang="en">
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Espec5.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Pàgina Principal</title>
 
 </head>
-<body>
+<body id="bodyGame">
     <?php
         $llista = file("catala5.txt");
         $aleatori = rand(0,count($llista)-1);
@@ -19,7 +19,7 @@
     ?>
     <div id="general">
         <div>
-            <header>
+            <header id="headerGame">
                 <h1 class="titol">WORDLE</h1>
             </header>
             <div id="paraules-general">
