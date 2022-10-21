@@ -17,17 +17,21 @@
         </div>
         <hr>
         <div id="instruccions">
+            <br>
             <p>Qualsevol persona pot jugar a la paraula del dia.<br><br>
                 L'objectiu és simple, endevinar la paraula oculta. La paraula té 5 lletres i tens 6 intents per a endevinar-la. La paraula és la mateixa per a totes les persones en aquest dia.<br><br>
                 Cada intent ha de ser una paraula vàlida. En cada ronda el joc pinta cada lletra d'un color indicant si aquesta lletra es troba o no en la paraula i si es troba en la posició correcta.
             </p>
+            <br>
             <ul>
                 <li><span class="verd">VERD</span> significa que la lletra R està en la paraula i en la posició <span class="verd">CORRECTA</span>.</li>
                 <li><span class="groc">GROC</span> significa que la lletra és present en la paraula però en la posició <span class="groc">INCORRECTA</span>.</li>
                 <li><span class="gris">GRIS</span> significa que la lletra NO està en la paraula.</li>
             </ul>
+            <br>
             <h2 style="text-align: center;">Exemple</h2>
             <hr>
+            <br>
             <p>
                 Imagina que la paraula oculta sigui RUBIA.<br><br>
                 Començem amb una paraula vàlida com FAROL.<br><br>
@@ -48,10 +52,12 @@
             </p>
             
             <div class="paraula"><div class="dVerd">R</div><div class="dVerd">U</div><div class="dVerd">B</div><div class="dVerd">I</div><div class="dVerd">A</div></div>
+            <br><br>
             <p>  
             </p>
             <h2 style="text-align: center;">Lletres Repetides</h2>
             <hr>
+            <br>
             <p>
                 La paraula oculta pot tenir lletres repetides. En aquest cas, les pistes són independents per a cada lletra i tenen prioritat (verda és major a groc).<br><br>
                 Per exemple si la paraula oculta és ROSAS. I utilitzo SACOS.<br><br>
@@ -69,26 +75,32 @@
             <br><br>
                 Només es marca l'última lletra com a correcta perquè té prioritat.
             </p>
+            <br>
             <h3 style="text-align: center;">Altres modes de joc</h3>
             <hr>
+            <br><br>
             <p>
                 Les mecaniques del joc són les mateixes per a totes les maneres de joc amb algunes petites diferències.
             </p>
+            <br>
             <h4 style="text-align: left;">Mode titlles</h4>
             <ul>
                 <li>La paraula amagada té un accent</li>
                 <li>La paraula pot contenir de 5 a 7 lletres</li>
                 <li>Les vocals amb titlles son independents de les normals</li>
             </ul>
+            <br>
             <h4 style="text-align: left;">Mode científic</h4>
             <ul>
                 <li>La paraula pot contenir de 5 a 7 lletres</li>
                 <li>La paraula amagada hi està relacionada amb la ciència.</li>
             </ul>
+            <br>
             <h4 style="text-align: left;">Contrarellotge</h4>
             <ul>
                 <li>Endevina la major quantitat de paraules en 5 minuts</li>
             </ul>
+            <br>
             <h4 style="text-align: left;">Crear</h4>
             <ul>
                 <li>Crea una paraula oculta i comparteix-la amb els teus amics</li>
@@ -97,17 +109,23 @@
             </ul>
             <h3 style="text-align: center;">Altres detalls</h3>
             <hr>
+            <br>
             <h5 style="text-align: left;">Titlles y Ñ al teclat</h5>
+            <br>
             <p>  
                 Per a escriure les titlles i la ñ en el teclat de l'ordinador utilitza la tecla ALT/*OPTION.<br><br>
                 Exemple: ALT/OPTION + e = é<br><br>
                 Exemple: ALT/OPTION + n = ñ
             </p>
+            <br>
             <h5 style="text-align: left;">Diccionari de paraules</h5>
+            <br>
             <p>  
                 La nostra llista de paraules no és perfecta encara que ajuntem diversos diccionaris. Si trobes un error pots enviar un correu a aleix-xavi@lapalabradeldia.com.
             </p>
+            <br>
             <h5 style="text-align: left;">Sobre el joc.</h5>
+            <br>
             <p>
                 Pots una mica més <a class="link" href="https://lapalabradeldia.com/acerca/index.html">sobre el joc aquí</a>
             </p>
