@@ -19,8 +19,8 @@
         <div id="instruccions">
             <br>
             <p>Qualsevol persona pot jugar a la paraula del dia.<br><br>
-                L'objectiu és simple, endevinar la paraula oculta. La paraula té 5 lletres i tens 6 intents per a endevinar-la. La paraula és la mateixa per a totes les persones en aquest dia.<br><br>
-                Cada intent ha de ser una paraula vàlida. En cada ronda el joc pinta cada lletra d'un color indicant si aquesta lletra es troba o no en la paraula i si es troba en la posició correcta.
+                L'objectiu és simple, endevinar la paraula oculta. La paraula té 5 lletres i tens 6 intents per a endevinar-la. <br>La paraula és la mateixa per a totes les persones en aquest dia.<br><br>
+                Cada intent ha de ser una paraula vàlida. En cada ronda el joc pinta cada lletra d'un color indicant si <br> aquesta lletra es troba o no en la paraula i si es troba en la posició correcta.
             </p>
             <br>
             <ul>
@@ -59,7 +59,7 @@
             <hr>
             <br>
             <p>
-                La paraula oculta pot tenir lletres repetides. En aquest cas, les pistes són independents per a cada lletra i tenen prioritat (verda és major a groc).<br><br>
+                La paraula oculta pot tenir lletres repetides. En aquest cas, les pistes són independents per a cada lletra <br> i tenen prioritat (verda és major a groc).<br><br>
                 Per exemple si la paraula oculta és ROSAS. I utilitzo SACOS.<br><br>
             </p>
             
@@ -121,7 +121,7 @@
             <h5 style="text-align: left;">Diccionari de paraules</h5>
             <br>
             <p>  
-                La nostra llista de paraules no és perfecta encara que ajuntem diversos diccionaris. Si trobes un error pots enviar un correu a aleix-xavi@lapalabradeldia.com.
+                La nostra llista de paraules no és perfecta encara que ajuntem diversos diccionaris.<br> Si trobes un error pots enviar un correu a aleix-xavi@lapalabradeldia.com.
             </p>
             <br>
             <h5 style="text-align: left;">Sobre el joc.</h5>
@@ -131,8 +131,16 @@
             </p>
         </div>
         <hr>
+        <br>
         <h3 style="text-align: center;">¿Llest/a per jugar?</h3>
-        <input style="text-align: center;" type="button" value="JUGAR" onclick="location.href='game.php'">
+        <br>
+        <form action="game.php" method="POST">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+            <button type="submit" id="jugar" style="text-align: center;">
+				<p id="pbutton">JUGAR</p>
+			</button>
+        </form>
     </div>
     <div id="right">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">

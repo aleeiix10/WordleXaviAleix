@@ -2,116 +2,133 @@
     float: left;
     width: 25%;
     height: 900px;
-}
-
-#left img {
+  }
+  
+  #left img {
     padding-left: 50px;
     width: 300px;
     height: 300px;
     padding-top: 300px;
-}
-
-#right {
+  }
+  
+  #right {
     float: right;
     width: 25%;
     height: 900px;
-}
-
-#right img {
+  }
+  
+  #right img {
     padding-left: 50px;
     width: 300px;
     height: 300px;
     padding-top: 300px;
-}
-#body1 {
+  }
+  #body1 {
     background-color: black;
     font-size: 1.3rem;
-}
-
-#h1 {
+  }
+  
+  #h1 {
     width: 905.75px;
     height: 90px;
     margin: 0 auto;
     padding: 0;
     color: beige;
-}
-#h1 img {
+  }
+  #h1 img {
     width: 60px;
     height: 60px;
     margin-top: 10px;
-    
-}
-#h1 h1 {
+  }
+  #h1 h1 {
     text-align: center;
     padding-top: 20px;
-    
-}
-hr {
+  }
+  hr {
     border: 1px solid #43a147;
     width: 100%;
-}
-#tot {
+  }
+  #tot {
     text-align: center;
     width: 48%;
     margin: 0 auto;
     color: beige;
     float: left;
     width: 930px;
-}
-#instruccions {
+  }
+  #tot2 {
+    margin: 0 auto;
+    text-align: center;
+    color: beige;
+    width: 100%;
+  }
+  #instruccions {
     width: 100%;
     border: 1px solid white;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 690px;
     float: left;
-}
-p {
-    text-align: justify;   
-}
-input {
+  }
+  
+  #instruccions p {
+    padding-left: 10px;
+  }
+  
+  #instruccions h3 {
+    padding-left: 10px;
+  }
+  #instruccions h4 {
+    padding-left: 10px;
+  }
+  #instruccions p {
+    text-align: justify;
+  }
+  #jugar {
     background-color: #43a147;
     width: 100px;
-    height: 100px;
+    height: 50px;
     border-radius: 10px;
     border: none;
     color: #ffffff;
-}
-
-.verd {
+    text-align: center;
+  }
+  
+  .verd {
     color: green;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
     padding: 5px;
-}
-
-.groc {
+  }
+  
+  .groc {
     color: yellow;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
     padding: 4.5px;
-}
-
-.gris {
+  }
+  
+  .gris {
     color: gray;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
     padding: 5px;
-}
-li{
+  }
+  li {
     padding: 7px;
-}
-ul {
+  }
+  ul {
     text-align: left;
     font-size: 1.3rem;
-}
-
-.link {
+  }
+  
+  .link {
     color: green;
-}
-.dGroc{
+  }
+  .dGroc {
     display: inline;
     background-color: yellow;
     color: black;
@@ -120,8 +137,8 @@ ul {
     margin: 2px;
     font-size: 1.3rem;
     font-weight: bold;
-}
-.dGris{
+  }
+  .dGris {
     color: black;
     display: inline;
     background-color: gray;
@@ -130,8 +147,8 @@ ul {
     margin: 2px;
     font-size: 1.3rem;
     font-weight: bold;
-}
-.dVerd{
+  }
+  .dVerd {
     color: black;
     display: inline;
     background-color: green;
@@ -140,8 +157,8 @@ ul {
     margin: 2px;
     font-size: 1.3rem;
     font-weight: bold;
-}
-.dBlanc{
+  }
+  .dBlanc {
     color: black;
     display: inline;
     background-color: white;
@@ -150,55 +167,53 @@ ul {
     margin: 2px;
     font-size: 1.3rem;
     font-weight: bold;
-}
-*{
+  }
+  * {
     margin: 0;
     padding: 0;
-}
-#htmlGame, #bodyGame{
+  }
+  #htmlGame,
+  #bodyGame {
     background-color: black;
     height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#general{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #general {
     display: flex;
-
-    height: 100%;
     align-items: center;
     flex-direction: column;
-}
-#headerGame{
+  }
+  #headerGame {
     border-bottom: 1px solid beige;
-}
-.titol{
-    color:beige;
+  }
+  .titol {
+    color: beige;
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0.4rem 0 0.4rem 0;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#paraules-general{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #paraules-general {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     overflow: hidden;
-}
-
-#paraules{
+  }
+  
+  #paraules {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     padding: 10px;
     box-sizing: border-box;
-
-}
-
-.quadrat{
+  }
+  
+  .quadrat {
     border: 2px solid beige;
     min-width: 60px;
     min-height: 60px;
@@ -208,27 +223,99 @@ ul {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color:beige;   
-}
-
-#teclat {
+    color: beige;
+  }
+  
+  #teclat {
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#teclat div {
+  }
+  
+  #teclat div {
     display: flex;
-}
-.boto-teclat {
+  }
+  .boto-teclat {
     font-size: 1rem;
     font-weight: 700;
     padding: 15px;
-    margin: 5px ;
+    margin: 5px;
     text-transform: uppercase;
     border: none;
-    background-color:gray;
+    background-color: gray;
     border-radius: 5px;
     color: beige;
-}
+  }
+  #result {
+    width: 100%;
+    border: 1px solid green;
+    height: 690px;
+  }
+  
+  form input {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+  form label {
+    font-size: 20px;
+  }
+  #post {
+    color: beige;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: left;
+  }
+  
+  #result img {
+    height: 80%;
+  }
+
+  #post2{
+    color: beige;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /*-------------------------- EFECTE CSS -------------------------------------*/
+  
+  #resultMatchLose {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    font-size: 40px;
+    margin: auto;
+    padding: auto;
+    
+    animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    }
+  
+    #resultMatchWin {
+      display: block;
+      font-family: monospace;
+      white-space: nowrap;
+      border-right: 4px solid;
+      width: 13ch;
+      font-size: 40px;
+      margin: auto;
+      padding: auto;
+      
+      animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+      overflow: hidden;
+      }
+    
+    @keyframes typing {
+      from { width: 0};
+    }
+    
+    @keyframes blink {
+     50% { border-color: transparent};
+    }
