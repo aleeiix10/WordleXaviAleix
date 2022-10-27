@@ -1,21 +1,20 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html id="htmlGame" lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Pàgina Principal</title>
-
 </head>
 <body id="bodyGame">
     <?php
         $llista = file("catala5.txt");
         $aleatori = rand(0,count($llista)-1);
         $paraula= $llista[$aleatori];
-        echo "<script>$paraula</script>\n";
+
+        $_SESSION["nom"] = $_POST["nom"];
     ?>
     <div id="general">
         <div>
@@ -58,7 +57,7 @@
             </div>
             <div id="teclat">
                 <div>
-                    <button class="boto-teclat" onclick="escriureLletra('q')">q</button>
+                    <button class="boto-teclat" onclick="escriureLletra('q')" >q</button>
                     <button class="boto-teclat" onclick="escriureLletra('w')" >w</button>
                     <button class="boto-teclat" onclick="escriureLletra('e')" >e</button>
                     <button class="boto-teclat" onclick="escriureLletra('r')" >r</button>
@@ -95,6 +94,10 @@
             </div>
         </div>
     </div>
-    
+    <?php
+        echo "<p id='post2'>Bienvenido: ".$_SESSION["nom"]."</p>";
+        
+    ?>
+    <script src="script.js"></script>
 </body>
 </html>

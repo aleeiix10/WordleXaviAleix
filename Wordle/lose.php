@@ -16,18 +16,17 @@
         <div id="h1">
             <h1 style="text-align: center;">WORDLE</h1>
         </div>
-        <?php 
+        <?php
             echo "<p id='post'>".$_SESSION["nom"]."</p>";
         ?>
         <br>
         <div id="result">
-            <img src="https://media.istockphoto.com/vectors/pixel-art-8bit-you-win-text-with-one-big-winner-golden-cup-on-black-vector-id1268272324?k=20&m=1268272324&s=170667a&w=0&h=YOMnV2dwGoeNdhKSO5kgD9JYnHNGcEd8euXi3g01PS8=">
-            <span id="resultMatchWin">HAS GUANYAT!!</span>
+            <img src="https://www.okiwoki.com/images/visuels/35-jeuxvideo-gameover.png">
+            <span id="resultMatchLose">HAS PERDUT!!</span>
         </div>
     </div>  
     <div id="right">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
     </div>
-    
 </body>
 </html>
