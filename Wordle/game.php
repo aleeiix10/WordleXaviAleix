@@ -95,7 +95,7 @@
         </div>
     </div>
     <?php
-        echo "<p id='post2'>Bienvenido: ".$_SESSION["nom"]."</p>";
+        echo "<p id='post2'>Benvingut: ".$_SESSION["nom"]."</p>";
         
     ?>
     <script src="script.js"></script>
