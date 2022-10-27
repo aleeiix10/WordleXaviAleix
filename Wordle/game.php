@@ -13,9 +13,27 @@
         $llista = file("catala5.txt");
         $aleatori = rand(0,count($llista)-1);
         $paraula= $llista[$aleatori];
-
+        $paraula = trim($paraula);
+        
         $_SESSION["nom"] = $_POST["nom"];
+
+        $_SESSION[$_SESSION["nom"]."win"] = (isset($_SESSION[$_SESSION["nom"]."win"]))
+            ? $_SESSION[$_SESSION["nom"]."win"]
+            : array();
+
+        $_SESSION[$_SESSION["nom"]."puntuacio"] = (isset($_SESSION[$_SESSION["nom"]."puntuacio"]))
+            ? $_SESSION[$_SESSION["nom"]."puntuacio"]
+            : 0;
+        
+        $_SESSION[$_SESSION["nom"]."lose"] = (isset($_SESSION[$_SESSION["nom"]."lose"]))
+            ? $_SESSION[$_SESSION["nom"]."lose"]
+            : 0;
+
+        echo "<script>
+        var paraula = '$paraula';
+        </script>";
     ?>
+    
     <div id="general">
         <div>
             <header id="headerGame">
@@ -95,9 +113,18 @@
         </div>
     </div>
     <?php
-        echo "<p id='post2'>Benvingut: ".$_SESSION["nom"]."</p>";
+        echo "<p id='post'>".$_SESSION["nom"]." Puntuació : ".$_SESSION[$_SESSION["nom"]."puntuacio"]."punts</p>";
         
     ?>
+        <form id="formInfo" method="POST" action="win.php">
+            <input hidden type="number" id="intents" name="intents">
+        </form>
+        <form id="formInfo2" method="POST" action= "lose.php">
+            <input hidden type="number" id="lose" name="lose">
+        </form>
     <script src="script.js"></script>
+    <?php
+        
+    ?>
 </body>
 </html>

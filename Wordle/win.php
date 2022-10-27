@@ -20,7 +20,31 @@
             <h1 style="text-align: center;">WORDLE</h1>
         </div>
         <?php 
-            echo "<p id='post'>".$_SESSION["nom"]."</p>";
+            if(isset($_POST['intents'])){
+                array_push($_SESSION[$_SESSION["nom"]."win"],$_POST['intents']); 
+            } 
+            $_SESSION[$_SESSION["nom"]."puntuacio"] = 0;
+            for ($i=0; $i < count($_SESSION[$_SESSION["nom"]."win"]) ; $i++) {    
+                if ($_SESSION[$_SESSION["nom"]."win"][$i] == 1){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 150;
+                }
+                else if($_SESSION[$_SESSION["nom"]."win"][$i] == 2){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 100;
+                }
+                else if($_SESSION[$_SESSION["nom"]."win"][$i] == 3){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 60;
+                }
+                else if($_SESSION[$_SESSION["nom"]."win"][$i] == 4){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 40;
+                }
+                else if($_SESSION[$_SESSION["nom"]."win"][$i] == 5){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 20;
+                }
+                else if($_SESSION[$_SESSION["nom"]."win"][$i] == 6){
+                    $_SESSION[$_SESSION["nom"]."puntuacio"]+= 10;
+                }
+            }
+            echo "<p id='post'>".$_SESSION["nom"]." Puntuació : ".$_SESSION[$_SESSION["nom"]."puntuacio"]."punts</p>";
         ?>
         <br>
         <div id="result">

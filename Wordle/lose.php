@@ -20,7 +20,8 @@
             <h1 style="text-align: center;">WORDLE</h1>
         </div>
         <?php
-            echo "<p id='post'>".$_SESSION["nom"]."</p>";
+            $_SESSION[$_SESSION["nom"]."lose"] += $_POST["lose"];
+            echo "<p id='post'>".$_SESSION["nom"]." Puntuació : ".$_SESSION[$_SESSION["nom"]."puntuacio"]."punts</p>";
         ?>
         <br>
         <div id="result">
