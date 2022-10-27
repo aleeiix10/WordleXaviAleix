@@ -9,6 +9,9 @@
     <title>Pàgina Principal</title>
 </head>
 <body id="body1">
+    <audio controls autoplay hidden>
+    <source src="lose.mp3" type="audio/ogg">
+    </audio>
     <div id="left">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
     </div>
