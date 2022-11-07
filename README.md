@@ -1,8 +1,8 @@
 # WordleXaviAleix
-<h1> DEFINICIÓ DEL PROJECTE </h1>
+<h2> DEFINICIÓ DEL PROJECTE </h2>
 <p></p>
-<h1> INSTAL·LACIÓ </h1>
-<h2> WINDOWS </h2>
+<h2> INSTAL·LACIÓ </h2>
+<h3> WINDOWS </h3>
 <ul>
   <li>Descarregar aplicació XAMPP des de la seva pàgina web per poder tenir treballant el nostre servidor PHP https://www.apachefriends.org/es/download.html .</li>
   <li>Anar a la nostra branca Producció i descarregar el nostre codi en ZIP.</li>
@@ -10,7 +10,7 @@
   <li>Obre l'aplicació XAMPP Control Panel i iniciar el nostre servei APACHE i fixar-te en el seu port predeterminat</li>
   <li>Obrir el teu navegador preferit i posar la ruta http://localhost:8088/Wordle/ on el 8088 el substituïm pel port que té el teu servei APACHE</li>
 </ul>
-<h2> UBUNTU </h2>
+<h3> UBUNTU </h3>
 
 <ul>
   <li>Anar a la nostra branca Producció i descarregar el nostre codi en ZIP.</li>
