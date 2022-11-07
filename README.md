@@ -16,8 +16,8 @@
   <li>sudo apt install apache2</li>
   <li>Després instalarem el PHP : </li>
   <li>sudo apt-get install php</li>
-  <li>Fora de la consola descomprimirem el nostre codi a alguna carpeta<li>
+  <li>Fora de la consola descomprimirem el nostre codi a alguna carpeta</li>
   <li>Dins del CMD anem a aqesta carpeta on hem descomprimit el codi i executem php - S 0:8080 </li>
   <li>Obrir el teu navegador preferit i posar la ruta http://localhost:8080/Wordle/ </li>
   
-  <h1> A JUGAR </h1>
+  <h2 style="text-align:center;> A JUGAR </h2>
