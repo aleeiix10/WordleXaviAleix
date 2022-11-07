@@ -1,6 +1,7 @@
 # WordleXaviAleix
 <h2> DEFINICIÓ DEL PROJECTE </h2>
-<p></p>
+<p> Benvinguts a nostre projecte WORDLE, Wordle es basa en un joc per a totes les edats on comences a la pàgina principal amb una breu explicació de com funciona el joc i un petit formulari on et demana el nom per poder començar a jugar, una vegada posada et desplaces a la pàgina on comença el joc, es basa en un joc on tens 6 intents per poder endevinar una paraula aleatòria de 5 lletres que existeix, al provar una paraula et sortiran tres opcions a les lletres:</p>
+<p>Que sigui verd la lletra, això significa que la lletra hi és a la paraula i a la posició correcta, que sigui groga, que significa que hi és a la paraula però no en aquest lloc o que sigui gris, que significa que no hi és a la paraula. </p>
 <h2> INSTAL·LACIÓ </h2>
 <h3> WINDOWS </h3>
 <ul>
