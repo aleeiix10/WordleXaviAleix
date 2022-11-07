@@ -1,4 +1,7 @@
-# WordleXaviAleix -- Instruccions per a la instal·lació
+# WordleXaviAleix
+<h1> DEFINICIÓ DEL PROJECTE </h1>
+<p></p>
+<h1> INSTAL·LACIÓ </h1>
 <h2> WINDOWS </h2>
 <ul>
   <li>Descarregar aplicació XAMPP des de la seva pàgina web per poder tenir treballant el nostre servidor PHP https://www.apachefriends.org/es/download.html .</li>
