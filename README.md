@@ -11,13 +11,13 @@
 
 <ul>
   <li>Anar a la nostra branca Producció i descarregar el nostre codi en ZIP.</li>
-  <li>Obrir la terminal CMD de nostre ordinador Ubuntu instalar el PHP amb el servei APACHE amb aquestos passos</li>
+  <li>Obrir la terminal CMD de nostre ordinador Ubuntu instal·lar el PHP amb el servei APACHE amb aquests passos:</li>
   <li>sudo apt update</li>
   <li>sudo apt install apache2</li>
-  <li>Després instalarem el PHP : </li>
+  <li>Després instal·larem el PHP:</li>
   <li>sudo apt-get install php</li>
   <li>Fora de la consola descomprimirem el nostre codi a alguna carpeta</li>
-  <li>Dins del CMD anem a aqesta carpeta on hem descomprimit el codi i executem php - S 0:8080 </li>
+  <li>Dins del CMD anem a aquesta carpeta on hem descomprimit el codi i executem PHP - S 0:8080</li>
   <li>Obrir el teu navegador preferit i posar la ruta http://localhost:8080/Wordle/ </li>
   
   <h2 style="text-align:center;> A JUGAR </h2>
