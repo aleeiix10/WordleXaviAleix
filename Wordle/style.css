@@ -1,177 +1,853 @@
+/*--------------GENERALES--------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+#arriba{
+  width:100%;
+  height:50px;
+}
+#este{
+  float: right;
+  clear: both;
+  margin: 5px;
+}
+#tot {
+  text-align: center;
+  width: 48%;
+  margin: 0 auto;
+  color: beige;
+  float: left;
+  width: 930px;
+}
+
+
+/*--------------INDEX.PHP--------------*/
+#body1 {
+  background-color: black;
+  font-size: 1.3rem;
+}
+
 #left {
+  float: left;
+  width: 25%;
+  height: 900px;
+}
+ 
+#left img {
+  padding-left: 50px;
+  width: 300px;
+  height: 300px;
+  padding-top: 300px;
+}
+
+#right {
+  float: right;
+  width: 25%;
+  height: 900px;
+}
+
+#right img {
+  padding-left: 50px;
+  width: 300px;
+  height: 300px;
+  padding-top: 300px;
+}
+
+#h1 {
+  width: 50%;
+  float: left;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 10px;
+  color: beige;
+}
+#idiomes {
+  width: 50%;
+  float: left;
+  margin: 10px;
+  margin-top: 33px;
+  background-color: white;
+  border-radius: 20px;
+}
+#h1 img {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+#h1 h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+#instruccions ul {
+  display: block;
+  margin-top: 40px;
+}
+#paragraf {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#jugar {
+  background-color: #43a147;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+#destroybutton{
+  background-color: #43a147;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.verd {
+  color: green;
+  background-color: rgb(52, 51, 53);
+  border: 1px solid rgb(52, 51, 53);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.groc {
+  color: yellow;
+  background-color: rgb(52, 51, 53);
+  border: 1px solid rgb(52, 51, 53);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.gris {
+  color: gray;
+  background-color: rgb(52, 51, 53);
+  border: 1px solid rgb(52, 51, 53);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+
+}
+hr {
+  border: 1px solid #43a147;
+  width: 100%;
+}
+li {
+  padding: 7px;
+}
+ul {
+  text-align: left;
+  font-size: 1.3rem;
+}
+#instruccions {
+  width: 100%;
+  border: 1px solid white;
+  height: 550PX;  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+#destroy{
+  background-color: #43a147;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+form input{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+}
+form label {
+  font-size: 20px;
+}
+#post {
+  display: flex;
+  justify-content: center;
+  color: beige;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#idiomes {
+  width: 80px;
+  background-color: white;
+  border: 2px solid green;
+}
+
+/*Session destroy*/
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+.deletebtn {
+  background-color: #f44336;
+}
+.container {
+  padding: 16px;
+  text-align: center;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 0; 
+  left: 40%;
+  top: 30%;
+  width: 20%;
+  height: 20%; 
+  color: black;
+  margin-bottom: 30px;
+}
+.modal-content {
+  padding-top: 50px;
+  background-color: #f1c40f;
+
+  width: 100%; 
+  height: 100%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--------------GAME.PHP--------------*/
+#htmlGame,
+#bodyGame {
+  background-color: black;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#general {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#headerGame {
+  border-bottom: 1px solid beige;
+}
+.titol {
+  color: beige;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.4rem 0 0.4rem 0;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#paraules-general {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#paraules {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.quadrat {
+  border: 2px solid beige;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 2.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: beige;
+}
+
+#teclat {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teclat div {
+  display: flex;
+}
+.boto-teclat {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px;
+  margin: 5px;
+  text-transform: uppercase;
+  border: none;
+  background-color: gray;
+  border-radius: 5px;
+  color: beige;
+}
+
+/*--------------WIN LOSE PHP--------------*/
+#h1winlose {
+  width: 50%;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0;
+
+  color: beige;
+}
+#estadistiques{
+  margin-top: 20px;
+}
+#result {
+  width: 100%;
+  border: 1px solid green;
+  height: 690px;
+}
+#result img {
+  height: 50%;
+}
+/*EFECTE CSS*/
+#resultMatchLose {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 11ch;
+  font-size: 40px;
+  margin: auto;
+  padding: auto;
+  
+  animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  }
+#resultMatchWin {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 13ch;
+  font-size: 40px;
+  margin: auto;
+  padding: auto;
+  
+  animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  }
+
+@keyframes typing {
+  from { width: 0};
+}
+
+@keyframes blink {
+  50% { border-color: transparent};
+}
+
+@media only screen and (max-width: 800px) {
+  #tot {
+    text-align: center;
+    width: 10%;
+    margin: 0 auto;
+    color: beige;
     float: left;
-    width: 25%;
-    height: 900px;
+    width: 400px;
+  }
+
+  /*--------------INDEX.PHP--------------*/
+  #body1 {
+    background-color: black;
+    font-size: 0.9rem;
+  }
+
+  #left {
+    height: 20%;
   }
   
   #left img {
-    padding-left: 50px;
-    width: 300px;
-    height: 300px;
-    padding-top: 300px;
+    width: 150px;
+    height: 150px;
+    padding-top: 150px;
+    padding-left:30px;
   }
-  
+
   #right {
-    float: right;
-    width: 25%;
-    height: 900px;
+    height: 20%;
   }
-  
+
   #right img {
-    padding-left: 50px;
-    width: 300px;
-    height: 300px;
-    padding-top: 300px;
+    width: 150px;
+    height: 150px;
+    padding-top: 150px;
+    padding-left:30px;
   }
-  #body1 {
-    background-color: black;
-    font-size: 1.3rem;
-  }
-  
+
   #h1 {
-    width: 905.75px;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0;
+    width: 40%;
+    height: 50px;
     color: beige;
   }
-  #h1 img {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
+
+  #idiomes {
+    width: 70px;
+    margin: 5px;
+    margin-top: 33px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid green;
   }
   #h1 h1 {
     text-align: center;
     padding-top: 20px;
   }
-  hr {
-    border: 1px solid #43a147;
-    width: 100%;
+  #instruccions ul {
+    display: block;
+    margin-top: 40px;
   }
-  #tot {
-    text-align: center;
-    width: 48%;
-    margin: 0 auto;
-    color: beige;
-    float: left;
-    width: 930px;
-  }
-  #tot2 {
-    margin: 0 auto;
-    text-align: center;
-    color: beige;
-    width: 100%;
-  }
-  #instruccions {
-    width: 100%;
-    border: 1px solid white;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 690px;
-    float: left;
-  }
-  
-  #instruccions p {
-    padding-left: 10px;
-  }
-  
-  #instruccions h3 {
-    padding-left: 10px;
-  }
-  #instruccions h4 {
-    padding-left: 10px;
-  }
-  #instruccions p {
-    text-align: justify;
+  #paragraf {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   #jugar {
     background-color: #43a147;
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 30px;
     border-radius: 10px;
     border: none;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+
   }
-  
+  #destroybutton{
+    background-color: #43a147;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
   .verd {
     color: green;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
-    padding: 5px;
+
   }
-  
+
   .groc {
     color: yellow;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
-    padding: 4.5px;
+
+
   }
-  
   .gris {
     color: gray;
     background-color: rgb(52, 51, 53);
     border: 1px solid rgb(52, 51, 53);
     border-radius: 10px;
-    padding: 5px;
+
+
   }
-  li {
-    padding: 7px;
+  hr {
+    border: 1px solid #43a147;
+    width: 100%;
   }
   ul {
+    margin-top: 0;
+    padding-left: 25px;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  ul span{
+    font-size: x-small;
+  }
+  #instruccions {
+    width: 100%;
+    border: 1px solid white;
+    height: 350px;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+  }
+  form input{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  form label {
+    font-size: 15px;
+  }
+  #post {
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  /*Session destroy*/
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+  }
+
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+  }
+
+  .deletebtn {
+    background-color: #f44336;
+  }
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 0; 
+    left: 40%;
+    top: 30%;
+    width: 20%;
+    height: 20%; 
+    color: black;
+    margin-bottom: 30px;
+  }
+  .modal-content {
+    padding-top: 50px;
+    background-color: #f1c40f;
+
+    width: 100%; 
+    height: 100%;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /*--------------GAME.PHP--------------*/
+#htmlGame,
+#bodyGame {
+  background-color: black;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#general {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#headerGame {
+  border-bottom: 1px solid beige;
+}
+.titol {
+  color: beige;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#paraules-general {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#paraules {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.quadrat {
+  border: 2px solid beige;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: beige;
+}
+
+#teclat {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teclat div {
+  display: flex;
+}
+.boto-teclat {
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  background-color: gray;
+  border-radius: 5px;
+  color: beige;
+}
+
+/*--------------WIN LOSE PHP--------------*/
+#h1winlose {
+  width: 50%;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0;
+
+  color: beige;
+}
+
+#result {
+  width: 100%;
+  border: 1px solid green;
+  height: 350px;
+}
+#result img {
+  height: 30%;
+}
+/*EFECTE CSS*/
+#resultMatchLose {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 11ch;
+  font-size: 20px;
+  margin: auto;
+  padding: auto;
+  
+  animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  }
+#resultMatchWin {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 13ch;
+  font-size: 20px;
+  margin: auto;
+  padding: auto;
+  
+  animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  }
+
+@keyframes typing {
+  from { width: 0};
+}
+
+@keyframes blink {
+  50% { border-color: transparent};
+}
+}
+@media only screen and (max-width: 375px) {
+  #tot {
+    text-align: center;
+    margin: 0 auto;
+    color: beige;
+    float: left;
+    width: 200px;
+    height: 40%;
+    margin-top: 15%;
+  }
+
+  /*--------------INDEX.PHP--------------*/
+  #body1 {
+    background-color: black;
+    font-size: 0.9rem;
+  }
+
+  #left {
+    width: 21%;
   }
   
-  .link {
-    color: green;
+  #left img {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 210px;
+    
   }
-  .dGroc {
-    display: inline;
-    background-color: yellow;
-    color: black;
-    border-radius: 10px;
-    padding: 14px;
+
+  #right {
+    height: 21%;
+  }
+
+  #right img {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 210px;
+  }
+
+  #h1 {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: beige;
+    font-size: smaller;
+    text-align: center;
+  }
+
+  #idiomes {
+    font-size: 11px;
+    margin-top: 10px;
+    width: 60px;
     margin: 2px;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .dGris {
-    color: black;
-    display: inline;
-    background-color: gray;
-    border-radius: 10px;
-    padding: 14px;
-    margin: 2px;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .dVerd {
-    color: black;
-    display: inline;
-    background-color: green;
-    border-radius: 10px;
-    padding: 14px;
-    margin: 2px;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .dBlanc {
-    color: black;
-    display: inline;
     background-color: white;
-    border-radius: 10px;
-    padding: 14px;
-    margin: 2px;
-    font-size: 1.3rem;
-    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid green;
   }
-  * {
+  #h1 h1 {
+    text-align: center;
     margin: 0;
     padding: 0;
   }
+  #instruccions ul {
+    margin-top: 0;
+    display: block;
+  }
+  #paragraf {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 11px;
+  }
+  #jugar {
+    background-color: #43a147;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+
+  }
+  #destroybutton{
+    background-color: #43a147;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  .verd {
+    color: green;
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+    
+  }
+
+  .groc {
+    color: yellow;
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+
+
+  }
+  .gris {
+    color: gray;
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+  }
+  hr {
+    border: 1px solid #43a147;
+    width: 100%;
+  }
+  ul {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  ul span{
+    font-size: 11px;
+  }
+  #instruccions {
+    width: 100%;
+    border: 1px solid white;
+    height: 350px;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+  }
+  form input{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+  }
+  form label {
+    font-size: 15px;
+  }
+  #post {
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  /*--------------GAME.PHP--------------*/
   #htmlGame,
   #bodyGame {
     background-color: black;
@@ -183,19 +859,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
   }
   #headerGame {
     border-bottom: 1px solid beige;
   }
   .titol {
     color: beige;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 0.4rem 0 0.4rem 0;
     text-align: center;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   #paraules-general {
     margin-top: 20px;
     display: flex;
@@ -204,7 +881,7 @@
     flex-grow: 1;
     overflow: hidden;
   }
-  
+
   #paraules {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -212,12 +889,12 @@
     padding: 10px;
     box-sizing: border-box;
   }
-  
+
   .quadrat {
     border: 2px solid beige;
-    min-width: 60px;
-    min-height: 60px;
-    font-size: 2.5rem;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1.5rem;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -225,97 +902,72 @@
     text-transform: uppercase;
     color: beige;
   }
-  
-  #teclat {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   #teclat div {
     display: flex;
   }
   .boto-teclat {
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 15px;
-    margin: 5px;
+    font-size: 0.7rem;
+    padding: 8px;
+    margin: 2px;
     text-transform: uppercase;
     border: none;
     background-color: gray;
     border-radius: 5px;
     color: beige;
   }
+
+  /*--------------WIN LOSE PHP--------------*/
+  #h1winlose {
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    color: beige;
+  }
+
   #result {
     width: 100%;
     border: 1px solid green;
-    height: 690px;
+    height: 200px;
   }
-  
-  form input {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
+  #result p{
+    font-size: 11px;
   }
-  form label {
-    font-size: 20px;
-  }
-  #post {
-    color: beige;
-    margin: 0 auto;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: left;
-  }
-  
   #result img {
-    height: 80%;
+    height: 40%;
   }
-
-  #post2{
-    color: beige;
-    margin: 0 auto;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  
-  /*-------------------------- EFECTE CSS -------------------------------------*/
-  
+  /*EFECTE CSS*/
   #resultMatchLose {
     display: block;
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
     width: 11ch;
-    font-size: 40px;
+    font-size: 10px;
+    margin: auto;
+    padding: auto;
+    animation: typing 2s steps(11), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    }
+  #resultMatchWin {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 13ch;
+    font-size: 10px;
     margin: auto;
     padding: auto;
     
     animation: typing 2s steps(11), blink .5s infinite step-end alternate;
     overflow: hidden;
     }
-  
-    #resultMatchWin {
-      display: block;
-      font-family: monospace;
-      white-space: nowrap;
-      border-right: 4px solid;
-      width: 13ch;
-      font-size: 40px;
-      margin: auto;
-      padding: auto;
-      
-      animation: typing 2s steps(11), blink .5s infinite step-end alternate;
-      overflow: hidden;
-      }
-    
-    @keyframes typing {
-      from { width: 0};
-    }
-    
-    @keyframes blink {
-     50% { border-color: transparent};
-    }
+
+  @keyframes typing {
+    from { width: 0};
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent};
+  }
+}
