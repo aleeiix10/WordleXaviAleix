@@ -1,4 +1,23 @@
-<?php session_start() ?>
+<?php session_start();
+
+if (!isset($_SESSION['lang']))
+	$_SESSION['lang'] = "ca";
+else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang']))
+{
+	if ($_GET['lang'] == "es") {
+		$_SESSION['lang'] = "es";
+    }
+	else if ($_GET['lang']  == "en") {
+        $_SESSION['lang'] = "en";
+    }
+    else if ($_GET['lang']  == "ca"){
+		$_SESSION['lang'] = "ca";
+    }
+}
+
+require_once "idiomes/" . $_SESSION['lang'] . ".php";
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +27,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Pàgina Principal</title>
 </head>
+<header id="arriba">
+    <div id = "este">
+        <a href="index.php"><button id="jugar"><p id="pbutton"><?php echo $lang['botonHome']?></p></button></a>
+        <a href="game.php"><button id="jugar"><p id="pbutton"><?php echo $lang['botonGame']?></p></button></a>
+    </div>
+</header>
 <body id="body1">
+    <audio controls autoplay hidden>
+    <source src="lose.mp3" type="audio/ogg">
+    </audio>
     <div id="left">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
     </div>
     <div id="tot">
-        <div id="h1">
+        <div id="h1winlose">
             <h1 style="text-align: center;">WORDLE</h1>
+            <?php echo "<p id='post'>".$_SESSION["nom"].$lang['puntuacio'].$_SESSION["puntuacio"].$lang['punts'];?>
         </div>
         <?php
-            echo "<p id='post'>".$_SESSION["nom"]."</p>";
+            $_SESSION["lose"] += 1;    
         ?>
         <br>
         <div id="result">
             <img src="https://www.okiwoki.com/images/visuels/35-jeuxvideo-gameover.png">
-            <span id="resultMatchLose">HAS PERDUT!!</span>
+            <?php
+                
+            ?>
+            <span id="resultMatchLose"><?php echo $lang['missatgeDerrota']?></span>
         </div>
     </div>  
     <div id="right">

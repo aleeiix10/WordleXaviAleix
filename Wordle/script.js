@@ -1,4 +1,6 @@
 let intents = 0;
+let verds  = 0;
+let grocs = 0;
 let paraulaProbada = [[],[],[],[],[],[]];
 let guanyar = false;
 function escriureLletra(lletra){
@@ -28,16 +30,22 @@ function enviar(){
     else{
         if (paraulaProbada[intents].join('') == paraula){
             printarColors();
+            document.getElementById("intents").value = intents+1;
+            document.getElementById("verds").value = verds;
+            document.getElementById("grocs").value = grocs;
+            setTimeout(document.getElementById("formInfo").submit(),2000);
             guanyar = true;
-            window.location.replace("./win.php");
         }
         else{
             if (paraulaProbada[5].length && paraulaProbada[intents].join('') != paraula){
+                document.getElementById("lose").value = 1;
+                document.getElementById("formInfo2").submit();
                 printarColors();
-                window.location.replace("./lose.php");
             }else{
                 printarColors()
                 intents +=1;
+                var error = new Audio("error.mp3");
+                error.play();
             }    
         }
     } 
@@ -59,6 +67,7 @@ function printarColors(){
         if (paraulaProbada[intents][i] === paraula[i]){
             document.getElementById((intents*5)+i+1).style.backgroundColor = "green";
             dictLetras[paraula[i]] -=1;
+            verds +=1;
         }
     }
     for (let i = 0; i < paraulaProbada[intents].length; i++) {
@@ -67,8 +76,20 @@ function printarColors(){
                 if(dictLetras[paraulaProbada[intents][i]]>=1){
                     document.getElementById((intents*5)+i+1).style.backgroundColor = "#f1c40f";
                     dictLetras[paraulaProbada[intents][i]] -=1;
+                    grocs +=1;
                 }
             }
         }
     }
+}
+var dialog = document.querySelector('dialog');
+dialogPolyfill.registerDialog(dialog);
+function showDialog() {
+    document.getElementById('dialog').show();
+} 
+function hideDialog() {
+    document.getElementById('dialog').close();
+}
+function destroySession() {
+    window.location.href = "session_destroy.php";
 }

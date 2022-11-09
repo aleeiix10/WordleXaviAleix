@@ -1,4 +1,27 @@
-<?php session_start() ?>
+<?php 
+session_start();
+$idioma;
+
+if (!isset($_SESSION['lang']))
+    $_SESSION['lang'] = "ca";
+else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang']))
+{
+    if ($_GET['lang'] == "es") {
+        $_SESSION['lang'] = "es";
+        $idioma = "castellano";
+    }
+    else if ($_GET['lang']  == "en") {
+        $idioma = "english";
+        $_SESSION['lang'] = "en";
+    }
+    else if ($_GET['lang']  == "ca"){
+        $idioma = "catala";
+        $_SESSION['lang'] = "ca";
+    }
+}
+
+require_once "idiomes/" . $_SESSION['lang'] . ".php";
+?>
 <!DOCTYPE html>
 <html id="htmlGame" lang="en">
 <head>
@@ -8,15 +31,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Pàgina Principal</title>
 </head>
+<header id="arriba">
+    <div id = "este">
+        <a href="index.php"><button id="jugar"><p id="pbutton"><?php echo $lang['botonHome']?></p></button></a>
+        <a><button id="jugar"><p id="pbutton"><?php echo $lang['botonGame']?></p></button></a>
+    </div>
+</header>
 <body id="bodyGame">
     <?php
-        $llista = file("catala5.txt");
+        $llista = file($_SESSION['lang']. ".txt");
         $aleatori = rand(0,count($llista)-1);
         $paraula= $llista[$aleatori];
         $paraula = trim($paraula);
+        if(!isset($_POST["nom"])){
+            $_SESSION["nom"] = $_SESSION["nom"];
+        }
+        else{
+            $_SESSION["nom"] = $_POST["nom"];
+        }
         
 
-        $_SESSION["nom"] = $_POST["nom"];
+        $_SESSION["win"] = (isset($_SESSION["win"]))
+            ? $_SESSION["win"]
+            : array();
+           
+        $_SESSION["puntuacio"]  = (isset( $_SESSION["puntuacio"] ))
+            ?  $_SESSION["puntuacio"] 
+            : 0;
+        
+        $_SESSION["verds"] = (isset($_SESSION["verds"]))
+            ? $_SESSION["verds"]
+            : array();
+
+        $_SESSION["grocs"] = (isset($_SESSION["grocs"]))
+            ? $_SESSION["grocs"]
+            : array();    
+        $_SESSION["lose"] = (isset($_SESSION["lose"]))
+            ? $_SESSION["lose"]
+            : 0;
 
         echo "<script>
         var paraula = '$paraula';
@@ -85,10 +137,11 @@
                     <button class="boto-teclat" onclick="escriureLletra('j')" >j</button>
                     <button class="boto-teclat" onclick="escriureLletra('k')" >k</button>
                     <button class="boto-teclat" onclick="escriureLletra('l')" >l</button>
-                    <button class="boto-teclat" onclick="escriureLletra('ñ')" >ñ</button>
+                    <button class="boto-teclat" onclick="escriureLletra('<?php echo $lang['lletra']?>')" ><?php echo $lang['lletra']?></button>
                 </div>
                 <div>
-                    <button class="boto-teclat" onclick="enviar()">ENVIAR</button>
+                <button class="boto-teclat" onclick="enviar()"><?php echo $lang['enviar']?></button>
+
                     <button class="boto-teclat" onclick="escriureLletra('z')" >z</button>
                     <button class="boto-teclat" onclick="escriureLletra('x')" >x</button>
                     <button class="boto-teclat" onclick="escriureLletra('c')" >c</button>
@@ -96,15 +149,25 @@
                     <button class="boto-teclat" onclick="escriureLletra('b')" >b</button>
                     <button class="boto-teclat" onclick="escriureLletra('n')" >n</button>
                     <button class="boto-teclat" onclick="escriureLletra('m')" >m</button>
-                    <button class="boto-teclat" onclick= "esborrarLletra()">BORRAR</button>
+                    <button class="boto-teclat" onclick= "esborrarLletra()"><?php echo $lang['eliminar']?></button>
                 </div>
             </div>
         </div>
     </div>
     <?php
-        echo "<p id='post2'>Bienvenido: ".$_SESSION["nom"]."</p>";
+        echo "<p id='post'>".$_SESSION["nom"].$lang['puntuacio']. $_SESSION["puntuacio"].$lang['punts'];
+    ?>
+        <form id="formInfo" method="POST" action="win.php">
+            <input hidden type="number" id="intents" name="intents">
+            <input hidden type="number" id="verds" name="verds">
+            <input hidden type="number" id="grocs" name="grocs">
+        </form>
+        <form id="formInfo2" method="POST" action= "lose.php">
+            <input hidden type="number" id="lose" name="lose">
+        </form>
+    <script src="script.js"></script>
+    <?php
         
     ?>
-    <script src="script.js"></script>
 </body>
 </html>
