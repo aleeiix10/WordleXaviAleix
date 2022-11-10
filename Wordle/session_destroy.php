@@ -1,6 +1,9 @@
 <?php
     session_start();
+    $idioma = $_SESSION['lang'];
     session_destroy();
-    header("Location: index.php")
+    session_start();
+    $_SESSION['lang'] = $idioma;
+    header("Location: index.php");
 ?>
 

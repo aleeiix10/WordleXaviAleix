@@ -82,7 +82,14 @@ function printarColors(){
         }
     }
 }
-
+var dialog = document.querySelector('dialog');
+dialogPolyfill.registerDialog(dialog);
+function showDialog() {
+    document.getElementById('dialog').show();
+} 
+function hideDialog() {
+    document.getElementById('dialog').close();
+}
 function destroySession() {
     window.location.href = "session_destroy.php";
 }

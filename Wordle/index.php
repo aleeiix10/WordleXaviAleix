@@ -66,7 +66,13 @@ require_once "idiomes/" . $_SESSION['lang'] . ".php";
 			</button>
             
         </form>
-        <button onclick="destroySession()" id="destroybutton"><?php echo $lang['reset']?></button>
+
+        <button onclick="showDialog()" id="destroybutton"><?php echo $lang['reset']?></button>
+        <dialog id="dialog">
+            <p><?php echo $lang['textReset']?></p>
+            <button onclick="hideDialog()" id="noButton"><?php echo $lang['no']?></button>
+            <button onclick="destroySession()" id="siButton"><?php echo $lang['si']?></button>
+        <dialog>  
     </div>
     <div id="right">
         <img src="http://www.wealthwords.com/img/ww-cdn-img/wordle-words.png">
