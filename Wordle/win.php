@@ -68,7 +68,7 @@ require_once "idiomes/" . $_SESSION['lang'] . ".php";
             else if($_SESSION["win"][$i] == 6){
                 $_SESSION["puntuacio"]+= 10 + (($_SESSION["verds"][$i]-5) * 10) + (($_SESSION["grocs"][$i]) * 5);
             }
-            } 
+        } 
     ?>
     <div id="tot">
         <div id="h1winlose">
